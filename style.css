@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.hed{
+    font-size: 75px;
+    color: red;
+    text-align: center;
+    margin-bottom: 10%;
+   
+}
+ .out{
+    /* border: 5px gray dashed; */
+    border-left:10px lightgreen;
+    border-style:groove;
+    font-size: 100px;
+    border-radius: 60%;
+    width: 200px;
+    height: 200px;
+    position:relative;
+    transform: translate(-50%,-50%);
+    left: 45%;
+    top: 50%;
+    animation:ball .5s linear 1s infinite forwards ;
+}
+
+@keyframes ball {
+    0%{transform: rotatez(0deg);}
+    25%{transform: rotatez(90deg);}
+    50%{transform: rotatez(180deg);}
+    75%{transform: rotatez(270deg);}
+    100%{transform: rotatez(360deg);}
+  
+}
